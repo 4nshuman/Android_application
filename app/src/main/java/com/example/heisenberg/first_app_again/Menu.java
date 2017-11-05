@@ -14,7 +14,7 @@ import android.widget.ListView;
 
 public class Menu extends ListActivity {
 
-    String classes[] = {"MainActivity","TextPlay","example2","example3","example4","example5","example6",
+    String classes[] = {"MainActivity","TextPlay","Email","example3","example4","example5","example6",
             "example7","example8","example9","example10","example11","example12 "
     };
 

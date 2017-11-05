@@ -9,30 +9,47 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
 
-        <activity android:name=".Splash" android:theme="@style/AppThemeWithoutActionBar">
+        <activity
+            android:name=".Splash"
+            android:theme="@style/AppThemeWithoutActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity" android:theme="@style/AppThemeWithActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppThemeWithActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAINACTIVITY" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".Menu" android:theme="@style/AppThemeWithActionBar">
+        <activity
+            android:name=".Menu"
+            android:theme="@style/AppThemeWithActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MENU" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".TextPlay" android:theme="@style/AppThemeWithActionBar">
+        <activity
+            android:name=".TextPlay"
+            android:theme="@style/AppThemeWithActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.TEXTPLAY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Email"
+            android:theme="@style/AppThemeWithActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.EMAIL" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
