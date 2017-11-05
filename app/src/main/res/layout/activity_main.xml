@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.heisenberg.first_app_again.MainActivity">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your total is 0"
+        android:textSize="45dp"
+        android:layout_gravity="center"
+        >
+    </TextView>
+
+    <Button
+        android:id="@+id/buttonadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        />
+
+
+    <Button
+        android:id="@+id/buttonsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Substract"
+        android:layout_gravity="center"/>
+</LinearLayout>
