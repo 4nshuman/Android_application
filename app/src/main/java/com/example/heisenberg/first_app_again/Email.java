@@ -48,7 +48,7 @@ public class Email extends AppCompatActivity implements View.OnClickListener {
                 "and finally this " +
                 str_random;
 
-        Intent email = new Intent(Intent.ACTION_SEND);
+        Intent email = new Intent(android.content.Intent.ACTION_SEND);
         email.putExtra(Intent.EXTRA_EMAIL, emailAdress);
         email.putExtra(Intent.EXTRA_SUBJECT, str_intro);
         email.setType("plain/text");

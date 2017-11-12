@@ -3,6 +3,7 @@ package com.example.heisenberg.first_app_again;
 import android.app.WallpaperManager;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
@@ -13,6 +14,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * Created by heisenberg on 11/5/17.
@@ -33,9 +35,10 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
         setContentView(R.layout.camera);
 
         initializeComponents();
+        InputStream is = getResources().openRawResource(+ R.mipmap.ic_launcher);
+        bmp = BitmapFactory.decodeStream(is);
         clickPic.setOnClickListener(this);
         setWall.setOnClickListener(this);
-
     }
 
     private void initializeComponents() {
